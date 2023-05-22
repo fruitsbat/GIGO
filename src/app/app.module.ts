@@ -9,13 +9,15 @@ import { TitleComponent } from './title/title.component';
 import { NgIconsModule } from '@ng-icons/core';
 import { featherGithub, featherRss } from '@ng-icons/feather-icons';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HiringExampleComponent } from './hiring-example/hiring-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpotifyExampleComponent,
     BasedOnComponent,
-    TitleComponent
+    TitleComponent,
+    HiringExampleComponent
   ],
   imports: [
     BrowserModule,
