@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --white: #d8dcb4;
+  --black: #381631;
+  --red: #e21c61;
+  --orange: #e26159;
+  --yellow: #fea85f;
+  --cyan: #5eb6ad;
+  --green: #1b958d;
+  --blue: #105390;
+}
+
+html {
+  min-height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+}
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+}

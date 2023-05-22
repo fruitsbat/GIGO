@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  color: var(--black);
+  font-size: 8em;
+  text-align: center;
+  line-break: anywhere;
+}
+
+h2 {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+}

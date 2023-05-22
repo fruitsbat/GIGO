@@ -1,0 +1,17 @@
+<section class="spotify-example">
+  <div class="examplediv">
+    <form [formGroup]="spotifyForm">
+      <input type="text" disabled="disabled" placeholder="songs of all time" />
+      <select name="songsPerPage" formControlName="songsPerPage" ngModel>
+        <option *ngFor="let x of [5, 10]">{{x}}</option>
+      </select>
+      <span>songs per page</span>
+    </form>
+    <p>found {{songs.length}} songs</p>
+    <app-based-on
+      link="http://www.lsi.us.es/~segura/files/papers/segura17-tse.pdf"
+      name="Sergio Segura, José A. Parejo, Javier Troya, and Antonio Ruiz-Cortés - Metamorphic Testing of RESTful Web APIs"
+    >
+    </app-based-on>
+  </div>
+</section>
