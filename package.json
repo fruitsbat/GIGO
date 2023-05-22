@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^16.0.2",
     "@angular/platform-browser-dynamic": "^16.0.2",
     "@angular/router": "^16.0.2",
+    "@angular/service-worker": "^16.0.2",
     "@ng-icons/core": "^25.0.1",
     "@ng-icons/feather-icons": "^25.0.1",
     "rxjs": "~7.5.0",
