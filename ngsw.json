@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1684774723765,
+  "timestamp": 1684785159192,
   "index": "/gigo/index.html",
   "assetGroups": [
     {
@@ -62,7 +62,7 @@
     "/gigo/atkinson_regular.17015577664a2fb5.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
     "/gigo/index.html": "958d5b495e61a50b233a41fb9ac18253d4d5ff8e",
     "/gigo/main.f565afe7841a2634.js": "e0a08188001d8bd4c5f240f3945dae89b7a4cde7",
-    "/gigo/manifest.webmanifest": "473d7408611345963a6315f31f1443523adab356",
+    "/gigo/manifest.webmanifest": "1c881a3cd813eb523a78a782147728fcf01d9ff1",
     "/gigo/polyfills.523afdf8fb0b6bf5.js": "bd750d8be33c7ec0703e4f5b81d49073c0cc34da",
     "/gigo/runtime.984ecb7949d78885.js": "1b5df2b3bd2fbe377284e19ae92f7d2d91c7deaa",
     "/gigo/styles.1ee45cfb38ea1d5d.css": "18495df2e3d79dd5148dd09e31843a9831eb2636"
