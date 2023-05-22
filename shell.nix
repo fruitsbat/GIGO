@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
     name = name;
     paths = buildInputs;
   };
-  buildInputs = [ nodejs-18_x nodePackages."@angular/cli" ];
+  buildInputs = [ nodejs-18_x nodePackages."@angular/cli@16" ];
   shellHook = ''
     export PATH="$HOME/go/bin:$PATH"
   '';
