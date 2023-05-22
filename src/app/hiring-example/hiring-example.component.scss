@@ -11,10 +11,17 @@ section {
 }
 
 .examplediv {
+  display: flex;
+  flex-direction: column;
   background-color: var(--black);
   color: var(--white);
   min-height: calc(100vh - calc(var(--defaultMargin) * 4));
   width: calc(100% - calc(var(--defaultMargin) * 2));
   margin: var(--defaultMargin);
   padding: var(--defaultMargin);
+}
+
+a {
+  color: var(--white);
+  text-decoration-color: var(--yellow);
 }
