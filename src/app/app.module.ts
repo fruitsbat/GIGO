@@ -7,7 +7,7 @@ import { BasedOnComponent } from './based-on/based-on.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TitleComponent } from './title/title.component';
 import { NgIconsModule } from '@ng-icons/core';
-import { featherAirplay } from '@ng-icons/feather-icons';
+import { featherGithub } from '@ng-icons/feather-icons';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { featherAirplay } from '@ng-icons/feather-icons';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgIconsModule.withIcons({featherAirplay})
+    NgIconsModule.withIcons({featherGithub})
   ],
   providers: [],
   bootstrap: [AppComponent]
