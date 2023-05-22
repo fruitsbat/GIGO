@@ -1,4 +1,5 @@
 :root {
+  --defaultMargin: 1em;
   --white: #d8dcb4;
   --black: #381631;
   --red: #e21c61;
@@ -45,4 +46,8 @@ section {
 }
 
 .examplediv {
+}
+
+h2 {
+  font-size: 3em;
 }
