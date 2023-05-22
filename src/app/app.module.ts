@@ -10,6 +10,7 @@ import { NgIconsModule } from '@ng-icons/core';
 import { featherGithub, featherRss, featherInfo } from '@ng-icons/feather-icons';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HiringExampleComponent } from './hiring-example/hiring-example.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HiringExampleComponent } from './hiring-example/hiring-example.componen
     SpotifyExampleComponent,
     BasedOnComponent,
     TitleComponent,
-    HiringExampleComponent
+    HiringExampleComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
