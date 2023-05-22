@@ -9,16 +9,40 @@
   --blue: #105390;
 }
 
+@font-face {
+  font-family: "Atkinson";
+  src: url("./assets/atkinson_regular.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Atkinson";
+  src: url("./assets/atkinson_bold.woff2");
+  font-weight: bold;
+}
+
 html {
   min-height: 100vh;
   scroll-snap-type: y proximity;
+  font-family: "Atkinson";
 }
 
 body {
   margin: 0;
   background-color: var(--white);
 }
+
 section {
   min-height: 100vh;
   scroll-snap-align: start;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.examplediv {
 }
