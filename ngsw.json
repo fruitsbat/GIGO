@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1684766998121,
+  "timestamp": 1684769947000,
   "index": "/GIGO/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,6 @@
         "ignoreVary": true
       },
       "urls": [
-        "/GIGO/favicon.ico",
         "/GIGO/index.html",
         "/GIGO/main.3b49e889b62f7463.js",
         "/GIGO/manifest.webmanifest",
@@ -31,6 +30,7 @@
       "urls": [
         "/GIGO/assets/atkinson_bold.woff2",
         "/GIGO/assets/atkinson_regular.woff2",
+        "/GIGO/assets/favicon.svg",
         "/GIGO/assets/icons/icon-128x128.png",
         "/GIGO/assets/icons/icon-144x144.png",
         "/GIGO/assets/icons/icon-152x152.png",
@@ -49,6 +49,7 @@
   "hashTable": {
     "/GIGO/assets/atkinson_bold.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
     "/GIGO/assets/atkinson_regular.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
+    "/GIGO/assets/favicon.svg": "bd609f7f0576f5389d1b900ed63ea1fe7679c83b",
     "/GIGO/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
     "/GIGO/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
     "/GIGO/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
@@ -59,8 +60,7 @@
     "/GIGO/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
     "/GIGO/atkinson_bold.0563f73e16b127d0.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
     "/GIGO/atkinson_regular.17015577664a2fb5.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
-    "/GIGO/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/GIGO/index.html": "590bc9f9e093a38f9794d044db1ea8c44d9e39cf",
+    "/GIGO/index.html": "31c7aca63aff829780dc3f4bd70e84800dacc3a4",
     "/GIGO/main.3b49e889b62f7463.js": "bc61b13de179cdb841481e2d7c8fb73d15bb3f03",
     "/GIGO/manifest.webmanifest": "473d7408611345963a6315f31f1443523adab356",
     "/GIGO/polyfills.523afdf8fb0b6bf5.js": "bd750d8be33c7ec0703e4f5b81d49073c0cc34da",
