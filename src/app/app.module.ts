@@ -7,7 +7,7 @@ import { BasedOnComponent } from './based-on/based-on.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TitleComponent } from './title/title.component';
 import { NgIconsModule } from '@ng-icons/core';
-import { featherGithub, featherRss } from '@ng-icons/feather-icons';
+import { featherGithub, featherRss, featherInfo } from '@ng-icons/feather-icons';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HiringExampleComponent } from './hiring-example/hiring-example.component';
 
@@ -24,7 +24,7 @@ import { HiringExampleComponent } from './hiring-example/hiring-example.componen
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgIconsModule.withIcons({featherGithub, featherRss}),
+    NgIconsModule.withIcons({featherGithub, featherRss, featherInfo}),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
