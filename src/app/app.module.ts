@@ -6,6 +6,8 @@ import { SpotifyExampleComponent } from './spotify-example/spotify-example.compo
 import { BasedOnComponent } from './based-on/based-on.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TitleComponent } from './title/title.component';
+import { NgIconsModule } from '@ng-icons/core';
+import { featherAirplay } from '@ng-icons/feather-icons';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { TitleComponent } from './title/title.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgIconsModule.withIcons({featherAirplay})
   ],
   providers: [],
   bootstrap: [AppComponent]
