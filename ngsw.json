@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1684764920787,
-  "index": "/metamorph-o-vision/index.html",
+  "timestamp": 1684766998121,
+  "index": "/GIGO/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/metamorph-o-vision/favicon.ico",
-        "/metamorph-o-vision/index.html",
-        "/metamorph-o-vision/main.f06a40128e563dc1.js",
-        "/metamorph-o-vision/manifest.webmanifest",
-        "/metamorph-o-vision/polyfills.d2702c218d7d01d5.js",
-        "/metamorph-o-vision/runtime.8e5a998ba7ffdeb7.js",
-        "/metamorph-o-vision/styles.dc9a77546f02caa0.css"
+        "/GIGO/favicon.ico",
+        "/GIGO/index.html",
+        "/GIGO/main.3b49e889b62f7463.js",
+        "/GIGO/manifest.webmanifest",
+        "/GIGO/polyfills.523afdf8fb0b6bf5.js",
+        "/GIGO/runtime.984ecb7949d78885.js",
+        "/GIGO/styles.dc9a77546f02caa0.css"
       ],
       "patterns": []
     },
@@ -29,43 +29,43 @@
         "ignoreVary": true
       },
       "urls": [
-        "/metamorph-o-vision/assets/atkinson_bold.woff2",
-        "/metamorph-o-vision/assets/atkinson_regular.woff2",
-        "/metamorph-o-vision/assets/icons/icon-128x128.png",
-        "/metamorph-o-vision/assets/icons/icon-144x144.png",
-        "/metamorph-o-vision/assets/icons/icon-152x152.png",
-        "/metamorph-o-vision/assets/icons/icon-192x192.png",
-        "/metamorph-o-vision/assets/icons/icon-384x384.png",
-        "/metamorph-o-vision/assets/icons/icon-512x512.png",
-        "/metamorph-o-vision/assets/icons/icon-72x72.png",
-        "/metamorph-o-vision/assets/icons/icon-96x96.png",
-        "/metamorph-o-vision/atkinson_bold.0563f73e16b127d0.woff2",
-        "/metamorph-o-vision/atkinson_regular.17015577664a2fb5.woff2"
+        "/GIGO/assets/atkinson_bold.woff2",
+        "/GIGO/assets/atkinson_regular.woff2",
+        "/GIGO/assets/icons/icon-128x128.png",
+        "/GIGO/assets/icons/icon-144x144.png",
+        "/GIGO/assets/icons/icon-152x152.png",
+        "/GIGO/assets/icons/icon-192x192.png",
+        "/GIGO/assets/icons/icon-384x384.png",
+        "/GIGO/assets/icons/icon-512x512.png",
+        "/GIGO/assets/icons/icon-72x72.png",
+        "/GIGO/assets/icons/icon-96x96.png",
+        "/GIGO/atkinson_bold.0563f73e16b127d0.woff2",
+        "/GIGO/atkinson_regular.17015577664a2fb5.woff2"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/metamorph-o-vision/assets/atkinson_bold.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
-    "/metamorph-o-vision/assets/atkinson_regular.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
-    "/metamorph-o-vision/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
-    "/metamorph-o-vision/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
-    "/metamorph-o-vision/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
-    "/metamorph-o-vision/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
-    "/metamorph-o-vision/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/metamorph-o-vision/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/metamorph-o-vision/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
-    "/metamorph-o-vision/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
-    "/metamorph-o-vision/atkinson_bold.0563f73e16b127d0.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
-    "/metamorph-o-vision/atkinson_regular.17015577664a2fb5.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
-    "/metamorph-o-vision/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/metamorph-o-vision/index.html": "ecb49c9737436139da229a774aaf86c1cae56043",
-    "/metamorph-o-vision/main.f06a40128e563dc1.js": "40c4a4dadcf265fedc69a7facc082367389d8cb5",
-    "/metamorph-o-vision/manifest.webmanifest": "473d7408611345963a6315f31f1443523adab356",
-    "/metamorph-o-vision/polyfills.d2702c218d7d01d5.js": "7f12ac2c1a5a63917b5f5f5107709cdfb04e1ac1",
-    "/metamorph-o-vision/runtime.8e5a998ba7ffdeb7.js": "9ce3b507eb192e569f7004485e2b98642e6601c3",
-    "/metamorph-o-vision/styles.dc9a77546f02caa0.css": "164c97ccad1f526b703ccb9f7858f6ced771e640"
+    "/GIGO/assets/atkinson_bold.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
+    "/GIGO/assets/atkinson_regular.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
+    "/GIGO/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/GIGO/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/GIGO/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/GIGO/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/GIGO/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/GIGO/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/GIGO/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/GIGO/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/GIGO/atkinson_bold.0563f73e16b127d0.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
+    "/GIGO/atkinson_regular.17015577664a2fb5.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
+    "/GIGO/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/GIGO/index.html": "590bc9f9e093a38f9794d044db1ea8c44d9e39cf",
+    "/GIGO/main.3b49e889b62f7463.js": "bc61b13de179cdb841481e2d7c8fb73d15bb3f03",
+    "/GIGO/manifest.webmanifest": "473d7408611345963a6315f31f1443523adab356",
+    "/GIGO/polyfills.523afdf8fb0b6bf5.js": "bd750d8be33c7ec0703e4f5b81d49073c0cc34da",
+    "/GIGO/runtime.984ecb7949d78885.js": "1b5df2b3bd2fbe377284e19ae92f7d2d91c7deaa",
+    "/GIGO/styles.dc9a77546f02caa0.css": "164c97ccad1f526b703ccb9f7858f6ced771e640"
   },
   "navigationUrls": [
     {
