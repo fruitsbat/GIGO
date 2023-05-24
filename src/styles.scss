@@ -61,18 +61,10 @@ a {
   align-items: center;
 }
 
-.calcslider {
+input[type="range"] {
   width: 100%;
 }
 
-datalist {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
-  writing-mode: vertical-lr;
-  width: 200px;
-}
-
-option {
-  padding: 0;
+.rtl {
+  direction: rtl;
 }

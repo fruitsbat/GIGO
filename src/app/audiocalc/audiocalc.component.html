@@ -1,9 +1,30 @@
 <h3>speech recognition</h3>
-<label for="hours">audio data {{hours.value}}h</label>
+<p>
+  one possible method to verify data for speech recognition and make it usable
+  would be to have someone <b>transcribe all of it</b>. as long as we trust our
+  transcriptionist it would be a safe method of ensuring data quality.
+  <br />
+  there is just one problem with that:
+</p>
+<label for="hours">💬 audio data: <b>{{formatAudioLength()}}h</b></label>
 <br />
-<input id="hours" type="range" [formControl]="hours" min="1" max="30" />
+<input id="hours" type="range" [formControl]="hours" min="1000" max="17689" />
 <br />
-<label for="salary">pay: ${{salary.value}} per hour</label>
+<label for="speed"
+  >🕙 transcriptionist speed:
+  <b>{{transcriptionistSpeed.value}}h per 1h of audio</b></label
+>
+<br />
+<input
+  class="rtl"
+  id="speed"
+  type="range"
+  [formControl]="transcriptionistSpeed"
+  min="2"
+  max="10"
+/>
+<br />
+<label for="salary">💵 pay: <b>${{salary.value}}</b> per hour</label>
 <br />
 <input
   class="calcslider moneyslider"
@@ -22,7 +43,10 @@
   <option value="29" label="salary of a software engineer (de)"></option>
   <option value="49" label="salary of a software engineer (us)"></option>
 </datalist>
-<p>it would cost us {{getTotalMoney()}}</p>
+<p>
+  it would cost <b>{{getTotalMoney()}}USD</b> to transribe this data and take
+  about <b>{{getTotalTimeSpent()}}h</b>
+</p>
 <details>
   <summary>sources</summary>
   <p>average salaries sourced from glass door and indeed</p>
