@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1684936727969,
+  "timestamp": 1684936823208,
   "index": "/gigo/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/gigo/index.html",
-        "/gigo/main.0b4878f6193616c5.js",
+        "/gigo/main.a3d8731ab79ff720.js",
         "/gigo/manifest.webmanifest",
         "/gigo/polyfills.523afdf8fb0b6bf5.js",
         "/gigo/runtime.984ecb7949d78885.js",
@@ -62,8 +62,8 @@
     "/gigo/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
     "/gigo/atkinson_bold.0563f73e16b127d0.woff2": "98dea985c326f2932a90a8ecfce29e8c064d5bb0",
     "/gigo/atkinson_regular.17015577664a2fb5.woff2": "50e76cc61973bfc0886113c96e57df90598daf79",
-    "/gigo/index.html": "cdf61417b13fcfe9a8515df1ad8103a3c3476ae7",
-    "/gigo/main.0b4878f6193616c5.js": "e46ff24c7922c01e0b0afb8faebae5ed6e2a367c",
+    "/gigo/index.html": "6c43646048c907a9a1af1069d36779ab96838cb0",
+    "/gigo/main.a3d8731ab79ff720.js": "1eb874a5185255d7e889ef0d2d7392b01c2a1bbb",
     "/gigo/manifest.webmanifest": "1c881a3cd813eb523a78a782147728fcf01d9ff1",
     "/gigo/polyfills.523afdf8fb0b6bf5.js": "bd750d8be33c7ec0703e4f5b81d49073c0cc34da",
     "/gigo/runtime.984ecb7949d78885.js": "1b5df2b3bd2fbe377284e19ae92f7d2d91c7deaa",
