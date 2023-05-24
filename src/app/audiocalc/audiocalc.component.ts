@@ -8,8 +8,8 @@ import { formatNumber } from '@angular/common';
   styleUrls: ['./audiocalc.component.scss']
 })
 export class AudiocalcComponent {
-  salary = new FormControl(7, {nonNullable: true});
-  hours = new FormControl(1000, {nonNullable: true});
+  salary = new FormControl(20, {nonNullable: true});
+  hours = new FormControl(1791, {nonNullable: true});
   transcriptionistSpeed = new FormControl(3, {nonNullable: true});
 
   formatAudioLength(): string {

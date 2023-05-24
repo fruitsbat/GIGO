@@ -1,0 +1,9 @@
+a {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--cyan);
+}
+
+a:hover {
+  text-decoration-color: var(--white);
+}
