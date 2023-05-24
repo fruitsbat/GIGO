@@ -63,6 +63,31 @@ a {
   align-items: center;
 }
 
-.rtl {
-  direction: rtl;
+button {
+  border-radius: 0%;
+  border-style: solid;
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--cyan);
+  border-width: calc(var(--defaultMargin) / 3);
+  cursor: pointer;
+  padding: var(--defaultMargin);
+}
+
+button.active {
+  border-color: var(--red);
+}
+
+button.active::before {
+  content: "✓";
+}
+
+button:hover {
+  border-color: var(--red);
+}
+
+.buttonbox {
+  display: flex;
+  gap: var(--defaultMargin);
+  flex-wrap: wrap;
 }

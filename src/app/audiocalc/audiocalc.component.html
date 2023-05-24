@@ -8,13 +8,34 @@
 </p>
 <label for="hours">💬 audio data: <b>{{formatAudioLength()}}h</b></label>
 <br />
-<input id="hours" type="range" [formControl]="hours" min="1791" max="17689" />
+<div class="buttonbox">
+  <button
+    *ngFor="let w of dataSets"
+    (click)="hours.patchValue(w.value)"
+    [class.active]="w.value === hours.value"
+  >
+    {{w.short}}
+  </button>
+</div>
+<input id="hours" type="range" [formControl]="hours" min="100" max="17689" />
+<p *ngFor="let v of getSelectedHours()">
+  <a href="{{v.href}}">{{v.about}}</a>
+</p>
 <br />
 <label for="speed"
   >🕙 time to transcribe:
   <b>{{transcriptionistSpeed.value}}h per 1h of audio</b></label
 >
 <br />
+<div class="buttonbox">
+  <button
+    *ngFor="let w of speeds"
+    (click)="transcriptionistSpeed.patchValue(w.value)"
+    [class.active]="w.value === transcriptionistSpeed.value"
+  >
+    {{w.short}}
+  </button>
+</div>
 <input
   id="speed"
   type="range"
@@ -22,9 +43,21 @@
   min="2"
   max="10"
 />
+<p *ngFor="let v of getSelectedSpeeds()">
+  <a href="{{v.href}}">{{v.about}}</a>
+</p>
 <br />
 <label for="salary">💵 pay: <b>${{salary.value}}</b> per hour</label>
 <br />
+<div class="buttonbox">
+  <button
+    *ngFor="let w of salaries"
+    (click)="salary.patchValue(w.value)"
+    [class.active]="w.value === salary.value"
+  >
+    {{w.short}}
+  </button>
+</div>
 <input
   class="calcslider moneyslider"
   id="salary"
@@ -37,12 +70,11 @@
 <p *ngFor="let v of getSelectedSalaries()">
   <a href="{{v.href}}">{{v.about}}</a>
 </p>
-<button *ngFor="let w of salaries" (click)="salary.patchValue(w.value)">
-  {{w.short}}
-</button>
 <p>
-  it would cost <b>{{getTotalMoney()}}USD</b> to transribe this data and take
-  about <b>{{getTotalTimeSpent()}}h</b>
+  <strong>
+    it would cost <b>{{getTotalMoney()}}USD</b> to transribe this data and take
+    about <b>{{getTotalTimeSpent()}}h</b>
+  </strong>
 </p>
 <p>
   many datasets resort to <b>using work that has already been done</b>. for the
