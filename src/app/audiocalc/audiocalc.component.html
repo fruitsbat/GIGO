@@ -32,15 +32,14 @@
   type="range"
   [formControl]="salary"
   min="7"
-  max="49"
+  max="50"
 />
-<datalist id="pay">
-  <option value="7" label="federal minimum wage (us)"></option>
-  <option value="13" label="minimum wage (hamburg)"></option>
-  <option value="20" label="salary of a transcriptionist (us)"></option>
-  <option value="29" label="salary of a software engineer (de)"></option>
-  <option value="49" label="salary of a software engineer (us)"></option>
-</datalist>
+<p *ngFor="let v of getSelectedSalaries()">
+  <a href="{{v.href}}">{{v.about}}</a>
+</p>
+<button *ngFor="let w of salaries" (click)="salary.patchValue(w.value)">
+  {{w.short}}
+</button>
 <p>
   it would cost <b>{{getTotalMoney()}}USD</b> to transribe this data and take
   about <b>{{getTotalTimeSpent()}}h</b>
