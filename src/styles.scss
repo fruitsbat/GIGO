@@ -89,3 +89,9 @@ button:hover {
   gap: var(--defaultMargin);
   flex-wrap: wrap;
 }
+
+u {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: var(--orange);
+}
