@@ -26,7 +26,6 @@
 
 html {
   min-height: 100vh;
-  scroll-snap-type: y proximity;
   font-family: "Atkinson";
 }
 
@@ -37,7 +36,6 @@ body {
 
 section {
   min-height: 100vh;
-  scroll-snap-align: start;
 }
 
 .grow {

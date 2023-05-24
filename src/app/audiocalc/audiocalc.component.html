@@ -8,6 +8,7 @@
 </p>
 <label for="hours">💬 audio data: <b>{{formatAudioLength()}}h</b></label>
 <br />
+<input id="hours" type="range" [formControl]="hours" min="100" max="17689" />
 <div class="buttonbox">
   <button
     *ngFor="let w of dataSets"
@@ -17,7 +18,6 @@
     {{w.short}}
   </button>
 </div>
-<input id="hours" type="range" [formControl]="hours" min="100" max="17689" />
 <p *ngFor="let v of getSelectedHours()">
   <a href="{{v.href}}">{{v.about}}</a>
 </p>
@@ -27,6 +27,13 @@
   <b>{{transcriptionistSpeed.value}}h per 1h of audio</b></label
 >
 <br />
+<input
+  id="speed"
+  type="range"
+  [formControl]="transcriptionistSpeed"
+  min="2"
+  max="10"
+/>
 <div class="buttonbox">
   <button
     *ngFor="let w of speeds"
@@ -36,28 +43,12 @@
     {{w.short}}
   </button>
 </div>
-<input
-  id="speed"
-  type="range"
-  [formControl]="transcriptionistSpeed"
-  min="2"
-  max="10"
-/>
 <p *ngFor="let v of getSelectedSpeeds()">
   <a href="{{v.href}}">{{v.about}}</a>
 </p>
 <br />
 <label for="salary">💵 pay: <b>${{salary.value}}</b> per hour</label>
 <br />
-<div class="buttonbox">
-  <button
-    *ngFor="let w of salaries"
-    (click)="salary.patchValue(w.value)"
-    [class.active]="w.value === salary.value"
-  >
-    {{w.short}}
-  </button>
-</div>
 <input
   class="calcslider moneyslider"
   id="salary"
@@ -67,6 +58,15 @@
   min="7"
   max="50"
 />
+<div class="buttonbox">
+  <button
+    *ngFor="let w of salaries"
+    (click)="salary.patchValue(w.value)"
+    [class.active]="w.value === salary.value"
+  >
+    {{w.short}}
+  </button>
+</div>
 <p *ngFor="let v of getSelectedSalaries()">
   <a href="{{v.href}}">{{v.about}}</a>
 </p>
