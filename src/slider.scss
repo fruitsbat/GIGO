@@ -16,6 +16,7 @@ input[type="range"]:focus {
 input[type="range"]::-webkit-slider-runnable-track {
   background: var(--cyan);
   height: calc(var(--defaultMargin) / 3);
+  transition: 0.3s;
 }
 
 input[type="range"]::-webkit-slider-runnable-track:hover {
@@ -23,35 +24,49 @@ input[type="range"]::-webkit-slider-runnable-track:hover {
 }
 
 input[type="range"]::-moz-range-track {
-  background: var(--cyan);
-  height: calc(var(--defaultMargin) / 3);
+  background-color: var(--cyan);
+  height: calc(var(--defaultMargin) * 2);
+}
+
+input[type="range"]::-moz-range-track:hover {
+  background-color: var(--red);
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  transition: 0.3s;
   height: calc(var(--defaultMargin) * 2);
   width: calc(var(--defaultMargin) * 2);
   background: var(--black);
   border: calc(var(--defaultMargin) / 3) solid var(--cyan);
-  border-radius: 100%;
+  border-radius: 0%;
   margin-top: calc(
     calc(var(--defaultMargin) * -1) + calc(calc(var(--defaultMargin) / 3) / 2)
   );
 }
 
-input[type="range"]::-webkit-slider-thumb:hover {
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active {
   border-color: var(--red);
   background-color: var(--white);
 }
 
 input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
-  height: calc(var(--defaultMargin) * 2);
-  width: calc(var(--defaultMargin) * 2);
+  height: calc(
+    calc(var(--defaultMargin) * 2) - calc(calc(var(--defaultMargin) / 3)) * 1
+  );
+  width: calc(
+    calc(var(--defaultMargin) * 2) - calc(calc(var(--defaultMargin) / 3)) * 1
+  );
   background: var(--black);
   border: calc(var(--defaultMargin) / 3) solid var(--cyan);
-  border-radius: 100%;
+  border-radius: 0%;
   margin-top: calc(
     calc(var(--defaultMargin) * -1) + calc(calc(var(--defaultMargin) / 3) / 2)
   );
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  border-color: var(--red);
+  background-color: var(--white);
 }
