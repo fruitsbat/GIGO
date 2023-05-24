@@ -1,92 +1,94 @@
-<h3>speech recognition</h3>
-<p>
-  one possible method to verify data for speech recognition and make it usable
-  would be to have someone <b>transcribe all of it</b>. as long as we trust our
-  transcriptionist it would be a safe method of ensuring data quality.
+<div class="audiocalc">
+  <h3>speech recognition</h3>
+  <p>
+    one possible method to verify data for speech recognition and make it usable
+    would be to have someone <b>transcribe all of it</b>. as long as we trust
+    our transcriptionist it would be a safe method of ensuring data quality.
+    <br />
+    there is just one problem with that:
+  </p>
+  <label for="hours">💬 audio data: <b>{{formatAudioLength()}}h</b></label>
   <br />
-  there is just one problem with that:
-</p>
-<label for="hours">💬 audio data: <b>{{formatAudioLength()}}h</b></label>
-<br />
-<input id="hours" type="range" [formControl]="hours" min="100" max="17689" />
-<div class="buttonbox">
-  <button
-    *ngFor="let w of dataSets"
-    (click)="hours.patchValue(w.value)"
-    [class.active]="w.value === hours.value"
+  <input id="hours" type="range" [formControl]="hours" min="100" max="17689" />
+  <div class="buttonbox">
+    <button
+      *ngFor="let w of dataSets"
+      (click)="hours.patchValue(w.value)"
+      [class.active]="w.value === hours.value"
+    >
+      {{w.short}}
+    </button>
+  </div>
+  <p *ngFor="let v of getSelectedHours()">
+    <a href="{{v.href}}">{{v.about}}</a>
+  </p>
+  <br />
+  <label for="speed"
+    >🕙 time to transcribe:
+    <b>{{transcriptionistSpeed.value}}h per 1h of audio</b></label
   >
-    {{w.short}}
-  </button>
+  <br />
+  <input
+    id="speed"
+    type="range"
+    [formControl]="transcriptionistSpeed"
+    min="2"
+    max="10"
+  />
+  <div class="buttonbox">
+    <button
+      *ngFor="let w of speeds"
+      (click)="transcriptionistSpeed.patchValue(w.value)"
+      [class.active]="w.value === transcriptionistSpeed.value"
+    >
+      {{w.short}}
+    </button>
+  </div>
+  <p *ngFor="let v of getSelectedSpeeds()">
+    <a href="{{v.href}}">{{v.about}}</a>
+  </p>
+  <br />
+  <label for="salary">💵 pay: <b>${{salary.value}}</b> per hour</label>
+  <br />
+  <input
+    class="calcslider moneyslider"
+    id="salary"
+    name="salary"
+    type="range"
+    [formControl]="salary"
+    min="7"
+    max="50"
+  />
+  <div class="buttonbox">
+    <button
+      *ngFor="let w of salaries"
+      (click)="salary.patchValue(w.value)"
+      [class.active]="w.value === salary.value"
+    >
+      {{w.short}}
+    </button>
+  </div>
+  <p *ngFor="let v of getSelectedSalaries()">
+    <a href="{{v.href}}">{{v.about}}</a>
+  </p>
+  <p>
+    <u>
+      it would cost <b>{{getTotalMoney()}}USD</b> to transribe this data and
+      take about <b>{{getTotalTimeSpent()}}h</b>
+    </u>
+  </p>
+  <p>
+    many datasets resort to <b>using work that has already been done</b>. for
+    the reasons seen above this should come as no suprise. Facebook's
+    <a href="https://huggingface.co/datasets/facebook/voxpopuli">voxpupuli</a>
+    uses <b>transcribed audio from the EU parliament</b>. Google's
+    <a href="https://research.google.com/audioset/dataset/speech.html"
+      >AudioSet</a
+    >
+    gets transcription data from <b>YouTube captions</b>. one outlier is
+    Mozilla's <a href="https://commonvoice.mozilla.org/">Common Voice</a>. this
+    set is built on thousands of hours of audio
+    <b>recorded specifically for Common Voice</b> which are then
+    <b>manually verified</b>. this is all done by volunteers.
+  </p>
 </div>
-<p *ngFor="let v of getSelectedHours()">
-  <a href="{{v.href}}">{{v.about}}</a>
-</p>
-<br />
-<label for="speed"
-  >🕙 time to transcribe:
-  <b>{{transcriptionistSpeed.value}}h per 1h of audio</b></label
->
-<br />
-<input
-  id="speed"
-  type="range"
-  [formControl]="transcriptionistSpeed"
-  min="2"
-  max="10"
-/>
-<div class="buttonbox">
-  <button
-    *ngFor="let w of speeds"
-    (click)="transcriptionistSpeed.patchValue(w.value)"
-    [class.active]="w.value === transcriptionistSpeed.value"
-  >
-    {{w.short}}
-  </button>
-</div>
-<p *ngFor="let v of getSelectedSpeeds()">
-  <a href="{{v.href}}">{{v.about}}</a>
-</p>
-<br />
-<label for="salary">💵 pay: <b>${{salary.value}}</b> per hour</label>
-<br />
-<input
-  class="calcslider moneyslider"
-  id="salary"
-  name="salary"
-  type="range"
-  [formControl]="salary"
-  min="7"
-  max="50"
-/>
-<div class="buttonbox">
-  <button
-    *ngFor="let w of salaries"
-    (click)="salary.patchValue(w.value)"
-    [class.active]="w.value === salary.value"
-  >
-    {{w.short}}
-  </button>
-</div>
-<p *ngFor="let v of getSelectedSalaries()">
-  <a href="{{v.href}}">{{v.about}}</a>
-</p>
-<p>
-  <u>
-    it would cost <b>{{getTotalMoney()}}USD</b> to transribe this data and take
-    about <b>{{getTotalTimeSpent()}}h</b>
-  </u>
-</p>
-<p>
-  many datasets resort to <b>using work that has already been done</b>. for the
-  reasons seen above this should come as no suprise. Facebook's
-  <a href="https://huggingface.co/datasets/facebook/voxpopuli">voxpupuli</a>
-  uses <b>transcribed audio from the EU parliament</b>. Google's
-  <a href="https://research.google.com/audioset/dataset/speech.html"
-    >AudioSet</a
-  >
-  gets transcription data from <b>YouTube captions</b>. one outlier is Mozilla's
-  <a href="https://commonvoice.mozilla.org/">Common Voice</a>. this set is built
-  on thousands of hours of audio
-  <b>recorded specifically for Common Voice</b> which are then
-  <b>manually verified</b>. this is all done by volunteers.
-</p>

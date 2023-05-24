@@ -7,3 +7,9 @@ a {
 a:hover {
   text-decoration-color: var(--red);
 }
+
+.audiocalc {
+  display: flex;
+  gap: calc(var(--defaultMargin) / 3);
+  flex-direction: column;
+}
