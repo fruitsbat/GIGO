@@ -11,14 +11,7 @@ section {
 }
 
 .examplediv {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--black);
-  color: var(--white);
-  min-height: calc(100vh - calc(var(--defaultMargin) * 4));
-  width: calc(100% - calc(var(--defaultMargin) * 2));
-  margin: var(--defaultMargin);
-  padding: var(--defaultMargin);
+  border-color: var(--yellow);
 }
 
 a {
@@ -52,6 +45,7 @@ a:hover {
   display: flex;
   gap: var(--defaultMargin);
   flex-direction: column;
+  border-width: calc(var(--defaultMargin) / 3);
 }
 
 .applicationOutput * ng-icon {
@@ -61,4 +55,10 @@ a:hover {
 fieldset {
   border-style: solid;
   border-color: var(--cyan);
+}
+
+@media only screen and (max-width: 940px) {
+  .applicationForm {
+    flex-direction: column;
+  }
 }

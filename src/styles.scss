@@ -39,7 +39,9 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .grow,
@@ -51,9 +53,6 @@ button {
 button:hover {
   transform: scale(1.125);
   transform-origin: center;
-}
-
-.examplediv {
 }
 
 h2 {
@@ -122,4 +121,14 @@ u {
   text-decoration-line: underline;
   text-decoration-style: double;
   text-decoration-color: var(--orange);
+}
+
+.examplediv {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  color: var(--white);
+  padding: var(--defaultMargin);
+  border-style: solid;
+  border-width: var(--defaultMargin);
 }

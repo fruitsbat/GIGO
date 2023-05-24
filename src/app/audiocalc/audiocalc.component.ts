@@ -9,9 +9,9 @@ import { SliderData } from '../sliderdata';
   styleUrls: ['./audiocalc.component.scss']
 })
 export class AudiocalcComponent {
-  salary = new FormControl(20.25, { nonNullable: true });
+  salary = new FormControl(20.28, { nonNullable: true });
   hours = new FormControl(1791.0, { nonNullable: true });
-  transcriptionistSpeed = new FormControl(3.0, { nonNullable: true });
+  transcriptionistSpeed = new FormControl(2.5, { nonNullable: true });
 
   salaries: SliderData[] = [
     {
@@ -28,7 +28,7 @@ export class AudiocalcComponent {
     },
     {
       value: 20.28,
-      about: "the average wage for a transcriptionist in the us is 20.28$",
+      about: "the average wage for a transcriptionist in the us is 20.28USD",
       href: "https://www.indeed.com/career/transcriptionist/salaries",
       short: "transcriptionist (us)",
     },
@@ -40,7 +40,7 @@ export class AudiocalcComponent {
     },
     {
       value: 49.24,
-      about: "the average wage for a software engineer in the us is 49.24",
+      about: "the average wage for a software engineer in the us is 49.24USD",
       href: "https://www.indeed.com/career/software-engineer/salaries",
       short: "software engineer (us)",
     }
@@ -78,7 +78,7 @@ export class AudiocalcComponent {
       value: 2763,
       short: "AudioSet",
       href: "https://research.google.com/audioset/dataset/speech.html",
-      about: "AudioSet is a data set taken from google captions",
+      about: "AudioSet is a data set taken from YouTube captions",
     },
     {
       value: 3209,
