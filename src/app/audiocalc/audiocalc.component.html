@@ -8,7 +8,6 @@
     there is just one problem with that:
   </p>
   <label for="hours">💬 audio data: <b>{{formatAudioLength()}}h</b></label>
-  <br />
   <input id="hours" type="range" [formControl]="hours" min="100" max="17689" />
   <div class="buttonbox">
     <button
@@ -27,7 +26,6 @@
     >🕙 time to transcribe:
     <b>{{transcriptionistSpeed.value}}h per 1h of audio</b></label
   >
-  <br />
   <input
     id="speed"
     type="range"
@@ -49,7 +47,6 @@
   </p>
   <br />
   <label for="salary">💵 pay: <b>${{salary.value}}</b> per hour</label>
-  <br />
   <input
     class="calcslider moneyslider"
     id="salary"
