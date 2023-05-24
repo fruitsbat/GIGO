@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-hiring-example',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./hiring-example.component.scss']
 })
 export class HiringExampleComponent {
-
+  gender = new FormControl("male", {nonNullable: true});
 }

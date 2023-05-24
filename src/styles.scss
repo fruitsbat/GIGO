@@ -29,6 +29,10 @@ html {
   font-family: "Atkinson";
 }
 
+p {
+  line-height: 2;
+}
+
 body {
   margin: 0;
   background-color: var(--white);
@@ -38,10 +42,13 @@ section {
   min-height: 100vh;
 }
 
-.grow {
+.grow,
+button {
   transition: all 0.24s ease-in-out;
 }
-.grow:hover {
+
+.grow:hover,
+button:hover {
   transform: scale(1.125);
   transform-origin: center;
 }
@@ -70,6 +77,27 @@ button {
   border-width: calc(var(--defaultMargin) / 3);
   cursor: pointer;
   padding: var(--defaultMargin);
+  display: flex;
+  align-items: center;
+  font-family: "Atkinson";
+}
+
+input[type="text"] {
+  cursor: text;
+  border-color: var(--cyan);
+  padding: var(--defaultMargin);
+  background-color: var(--white);
+  border-style: solid;
+  border-width: calc(var(--defaultMargin) / 3);
+  color: var(--black);
+  font-family: "Atkinson";
+}
+
+input[type="text"]:disabled {
+  border-color: var(--blue);
+  color: var(--blue);
+  cursor: not-allowed;
+  background-color: var(--green);
 }
 
 button.active {

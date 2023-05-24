@@ -1,7 +1,7 @@
 <section>
   <div class="examplediv">
-    <h2>bias in data</h2>
-    <p>
+    <h2>you got to know your chicken</h2>
+    <span>
       <a
         class="grow"
         href="https://www.aclu.org/news/womens-rights/why-amazons-automated-hiring-tool-discriminated-against"
@@ -9,6 +9,61 @@
         <ng-icon name="featherInfo" strokeWidth="2" color="#fea85f"></ng-icon>
         inspired by these events
       </a>
+    </span>
+    <p>
+      when working with deep learning,
+      <b>instead of programming we use data</b>. programming is still important
+      of course, but with libraries like tensor flow someone else has already
+      done the hard part for us. if you oversimplify, all we have to do is
+      <b>throw data at</b> a powerful enough <b>computer</b> until it figures
+      out what to do. on one hand this seems nice, on the other it can also seem
+      horrifying when you realize
+      <b>you don't know any good ways to test your data</b>.
+    </p>
+    <div class="applicationForm">
+      <div class="applicationInput">
+        <fieldset>
+          <legend>job application form</legend>
+          <label for="applicantId">applicant id:</label>
+          <input id="applicantId" type="text" value="123456-G" disabled />
+          <br />
+          <label for="gender">gender:</label>
+          <input id="gender" type="text" [formControl]="gender" />
+          <br />
+          <button (click)="gender.patchValue('male')">
+            <ng-icon name="featherRotateCw"></ng-icon>
+            reset to default
+          </button>
+        </fieldset>
+      </div>
+      <div class="applicationOutput">
+        <div *ngIf="gender.value.toLowerCase() === 'male'">
+          <ng-icon name="featherCheck" color="#1b958d"></ng-icon>
+          <br />
+          <span>accepted</span>
+        </div>
+        <div *ngIf="gender.value.toLowerCase() !== 'male'">
+          <ng-icon name="featherX" color="#e21c61"></ng-icon>
+          <br />
+          <span>denied</span>
+        </div>
+      </div>
+    </div>
+    <p>
+      <a
+        href="https://www.aclu.org/news/womens-rights/why-amazons-automated-hiring-tool-discriminated-against"
+      >
+        amazon actually had to stop using their AI hiring algorithm </a
+      >, because it unfairly rejected women. this was because the company had
+      previously mostly hired men. the AI saw it was more likely for men to get
+      hired and and made it's decisions based on that.
+    </p>
+    <p>
+      if your data isn't good then your model's output won't be either.
+      <b>garbage in garbage out...</b>
+    </p>
+    <p>
+      <u>we have to find some way to find out what's in our data</u>
     </p>
   </div>
 </section>

@@ -24,4 +24,41 @@ section {
 a {
   color: var(--white);
   text-decoration-color: var(--yellow);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration-color: var(--cyan);
+}
+
+.applicationForm {
+  display: flex;
+  border: calc(var(--defaultMargin) / 3) solid var(--yellow);
+  padding: var(--defaultMargin);
+}
+
+.applicationForm > * {
+  flex-grow: 1;
+}
+
+.applicationOutput {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.applicationInput > fieldset {
+  display: flex;
+  gap: var(--defaultMargin);
+  flex-direction: column;
+}
+
+.applicationOutput * ng-icon {
+  font-size: 5em;
+}
+
+fieldset {
+  border-style: solid;
+  border-color: var(--cyan);
 }
