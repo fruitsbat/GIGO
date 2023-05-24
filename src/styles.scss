@@ -60,3 +60,19 @@ a {
   flex-direction: horizontal;
   align-items: center;
 }
+
+.calcslider {
+  width: 100%;
+}
+
+datalist {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+}

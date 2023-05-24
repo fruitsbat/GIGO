@@ -11,6 +11,7 @@ import { featherGithub, featherRss, featherInfo } from '@ng-icons/feather-icons'
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HiringExampleComponent } from './hiring-example/hiring-example.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { AudiocalcComponent } from './audiocalc/audiocalc.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     BasedOnComponent,
     TitleComponent,
     HiringExampleComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    AudiocalcComponent
   ],
   imports: [
     BrowserModule,
