@@ -60,11 +60,21 @@ h2 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--cyan) !important;
   display: inline-flex;
   justify-content: center;
   flex-direction: horizontal;
   align-items: center;
+  text-decoration-thickness: calc(var(--defaultMargin) / 3) !important;
+}
+
+a:hover {
+  text-decoration-color: var(--red) !important;
+}
+
+a.grow {
+  text-decoration: none !important;
 }
 
 button {
@@ -121,6 +131,7 @@ u {
   text-decoration-line: underline;
   text-decoration-style: double;
   text-decoration-color: var(--orange);
+  text-decoration-thickness: calc(var(--defaultMargin) / 3);
 }
 
 .examplediv {
@@ -131,4 +142,19 @@ u {
   padding: var(--defaultMargin);
   border-style: solid;
   border-width: var(--defaultMargin);
+}
+
+select {
+  padding: var(--defaultMargin);
+  border-style: solid;
+  border-color: var(--cyan);
+  border-width: calc(var(--defaultMargin) / 3);
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Atkinson";
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: var(--red);
 }

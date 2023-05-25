@@ -1,0 +1,95 @@
+<section>
+  <div class="examplediv">
+    <h2>metamorphic testing</h2>
+    <p>
+      beside manually checking data, we can also use metamorphic testing. this
+      process can <b>not</b> be <b>as thorough</b> (with manual checking you do
+      look at every single example after all) as manual testing, but it takes
+      <b>much less time and effort</b>.
+    </p>
+    <p>
+      we 'simply' need to identify relations between input and output data.
+      these are called <b>"metamorphic relations"</b>.
+      <br />
+      we remember the hiring example.
+      <br />
+      in that case things like <b>gender</b> or <b>address</b> should
+      <b>not</b> affect the final output (hired or rejected). relevant
+      <b>work experience</b> probably <b>should</b>. these are metamorphic
+      relations.
+      <br />
+      if we identify how the input should affect the output we can run automated
+      tests to see if any of them have broken.
+      <br />
+      let's take a look at a search engine for music:
+    </p>
+    <div class="search">
+      <div class="searchbar">
+        <select id="search" type="text" [formControl]="type">
+          <ng-icon name="featherSearch"></ng-icon>
+          <option value=""></option>
+          <option value="vocal">vocal</option>
+        </select>
+        <input disabled type="text" value="music" />
+        <br />
+      </div>
+      <span [class.borked]="type.value === 'vocal'">
+        <b>{{getCurrentSongs().length}}</b> search results</span
+      >
+      <div class="songlist">
+        <div class="song" *ngFor="let song of getCurrentSongs()">
+          <div class="playicon">
+            <ng-icon name="featherPlayCircle"></ng-icon>
+          </div>
+          <div class="songtitle">
+            <span [class.borked]="song.type == 'broken'"
+              ><b>{{song.title}}</b></span
+            >
+            <br />
+            <span [class.borked]="song.type == 'broken'"
+              ><small>{{song.artist}}</small></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      oops! when we 'type in' "vocal music" we actually get <b>more results</b>
+      compared to just searching for 'music'!
+      <br />
+      if everything wouldve worked correctly we
+      <b>should have gotten less results</b>! our natural language model would
+      have just given us a filtered down list of all the music...
+      <br />
+      this clearly did not happen.
+    </p>
+    <p>
+      the authors of
+      <a href="http://www.lsi.us.es/~segura/files/papers/segura17-tse.pdf"
+        >this paper</a
+      >
+      have actually discovered a similar issue in Spotify's api. when changing
+      results per page from 20 to 50, but
+      <b>keeping the search query the same</b>, the number of
+      <b>total results went up</b>!
+    </p>
+    <p>
+      this technique is also useful for solving <b>the oracle problem</b>. you
+      might have noticed that we can't know the output of both of these examples
+      for sure. this is called the oracle problem.
+      <br />
+      in classic software testing, we usually know what output we want for what
+      input. if we write a function that adds one to a number x, the output will
+      always be x+1. meaning we have a "test oracle".
+      <br />
+      these are impossible to write for things such as search engines. who knows
+      what results you will get!
+    </p>
+    <p>
+      now, if we <b>take the output of a previous run</b> of our system,
+      <b>change something</b> in the input and then <b>check</b> if all the
+      <b>metamorphic relations</b> between the input and output check out we can
+      still <b>test</b> this system in an <b>automated</b> way! very useful.
+    </p>
+  </div>
+</section>

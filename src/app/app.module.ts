@@ -7,11 +7,12 @@ import { BasedOnComponent } from './based-on/based-on.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TitleComponent } from './title/title.component';
 import { NgIconsModule } from '@ng-icons/core';
-import { featherGithub, featherRss, featherInfo, featherRotateCw, featherCheck, featherX } from '@ng-icons/feather-icons';
+import { featherGithub, featherRss, featherInfo, featherRotateCw, featherCheck, featherX, featherPlayCircle, featherSearch } from '@ng-icons/feather-icons';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HiringExampleComponent } from './hiring-example/hiring-example.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { AudiocalcComponent } from './audiocalc/audiocalc.component';
+import { SearchExampleComponent } from './search-example/search-example.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +22,15 @@ import { AudiocalcComponent } from './audiocalc/audiocalc.component';
     TitleComponent,
     HiringExampleComponent,
     CalculatorComponent,
-    AudiocalcComponent
+    AudiocalcComponent,
+    SearchExampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgIconsModule.withIcons({featherGithub, featherRss, featherInfo, featherRotateCw, featherX, featherCheck}),
+    NgIconsModule.withIcons({featherGithub, featherRss, featherInfo, featherRotateCw, featherX, featherCheck, featherPlayCircle, featherSearch}),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
