@@ -21,16 +21,18 @@
       if we identify how the input should affect the output we can run automated
       tests to see if any of them have broken.
       <br />
-      let's take a look at a search engine for music:
+      let's take a look at a search engine for music powered by a natural
+      language model:
     </p>
     <div class="search">
       <div class="searchbar">
-        <select id="search" type="text" [formControl]="type">
+        <ng-icon name="featherSearch"></ng-icon>
+        <select id="search" type="text" [formControl]="type" class="grow">
           <ng-icon name="featherSearch"></ng-icon>
           <option value=""></option>
           <option value="vocal">vocal</option>
         </select>
-        <input disabled type="text" value="music" />
+        <span>music</span>
         <br />
       </div>
       <span [class.borked]="type.value === 'vocal'">
@@ -55,7 +57,7 @@
     </div>
     <p>
       oops! when we 'type in' "vocal music" we actually get <b>more results</b>
-      compared to just searching for 'music'!
+      compared to just searching for "music"!
       <br />
       if everything wouldve worked correctly we
       <b>should have gotten less results</b>! our natural language model would
@@ -68,7 +70,7 @@
       <a href="http://www.lsi.us.es/~segura/files/papers/segura17-tse.pdf"
         >this paper</a
       >
-      have actually discovered a similar issue in Spotify's api. when changing
+      have actually discovered a similar issue in Spotify's API. when changing
       results per page from 20 to 50, but
       <b>keeping the search query the same</b>, the number of
       <b>total results went up</b>!

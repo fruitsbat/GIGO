@@ -10,7 +10,7 @@ h2 {
 .songlist {
   display: flex;
   flex-direction: column;
-  max-height: 20em;
+  max-height: 20.4em;
   overflow: scroll;
   border-style: solid;
   border-width: calc(var(--defaultMargin) / 3);
@@ -44,13 +44,11 @@ ng-icon {
 .searchbar {
   display: flex;
   align-items: center;
+  padding: var(--defaultMargin);
+  gap: var(--defaultMargin);
   border-style: solid;
   border-color: var(--cyan);
   border-width: calc(var(--defaultMargin) / 3);
-}
-
-.searchbar > input[type="text"]:disabled {
-  flex-grow: 1;
 }
 
 .borked {
